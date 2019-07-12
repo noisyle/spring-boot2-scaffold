@@ -1,0 +1,16 @@
+server:
+  port: 8000
+
+security:
+  jwt:
+   secret-key: 12345678901234567890123456789012
+   expire-length: 3600000
+
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n'
+  level:
+    root: info
+    org.springframework.web: debug
+    org.springframework.security: debug
+    com.noisyle: debug
